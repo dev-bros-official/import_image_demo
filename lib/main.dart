@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:import_image_demo/images.dart';
 
 void main() {
   runApp(MyApp());
@@ -46,6 +47,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              height: 100,
+              child: Image.asset(Images.icon),
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
